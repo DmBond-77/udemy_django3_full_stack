@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="container max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold text-center my-10 uppercase">Password generator</h1>
+    <form action="password" class="space-y-6 text-center">
+        <select name="length" id="" class="mb-10 bg-gray-50 border border-gray-300 text-gray-900 mx-auto text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[50%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12" selected="selected">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+        </select>
+
+        <div class="space-y-6 flex flex-col items-start max-w-[200px] mx-auto">
+            <div class="flex items-center ">
+                <input id="upper" type="checkbox"  name="uppercase" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="upper" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Uppercase</label>
+            </div>
+            <div class="flex items-center ">
+                <input id="number" type="checkbox"  name="numbers" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="number" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Numbers</label>
+            </div>
+            <div class="flex items-center">
+                <input id="spec" type="checkbox"  name="special" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="spec" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Special Characters</label>
+            </div>
+
+        </div>
+
+        <input type="submit" value="Generate password " class="bg-slate-300 px-6 py-3 rounded-xl cursor-pointer hover:scale-105 duration-100 active:scale-100 hover:bg-slate-700/80 hover:text-white">
+        <a href="/about" class="bg-slate-700/80 text-white  px-6 py-3 rounded-xl ml-2 hover:bg-slate-300 hover:scale-105 inline-block active:scale-100"> About Project</a>
+    </form>
+</div>
+
+</body>
+</html>
